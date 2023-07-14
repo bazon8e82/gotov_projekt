@@ -37,18 +37,6 @@
                 android:orientation="horizontal"
                 android:weightSum="1">
 
-                <ImageButton
-                    android:id="@+id/ib_menu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="0.15"
-                    android:background="@drawable/transparent_background"
-                    android:gravity="center_vertical"
-                    android:scaleX="1.2"
-                    android:scaleY="1.2"
-                    android:src="@drawable/ic_menu" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
