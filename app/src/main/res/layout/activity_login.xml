@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AseeFM"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_background" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="38sp" />
+
+    <ImageView
+        android:id="@+id/login_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="75dp"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_album"
+        app:tint="#26595B" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/googleSignIn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/anonymousSignIn"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="16dp"
+        android:text="@string/registiraj_se"
+        android:textAllCaps="true"
+        android:textColor="#26595B"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="16dp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/anonymousSignIn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="70dp"
+        android:paddingVertical="16dp"
+        android:text="@string/zapo_ni_kao_gost"
+        android:textAllCaps="true"
+        android:textAppearance="@style/ButtonLabelOnSurfaceCenter"
+        android:textColor="#26595B"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        app:strokeColor="@color/grey"
+        app:strokeWidth="2dp"
+        tools:ignore="VisualLintButtonSize" />
+
+</RelativeLayout>

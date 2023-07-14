@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "431163945128",
+    "project_id": "aseefm-d312d",
+    "storage_bucket": "aseefm-d312d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431163945128:android:cca1f5a0655fed9358929d",
+        "android_client_info": {
+          "package_name": "com.example.aseefm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431163945128-a0k1197mcoenhrfpi0trfj9oagn6r70e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aseefm",
+            "certificate_hash": "b51a7b33fb660d1e1023d4be9a8e4a6832022c52"
+          }
+        },
+        {
+          "client_id": "431163945128-9pat4cdosvnlodmrk5q0epcsrqf178dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC46xl2EZL76of-N5WsvcqKVv_iNpU6QY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431163945128-9pat4cdosvnlodmrk5q0epcsrqf178dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

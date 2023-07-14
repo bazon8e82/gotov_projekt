@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/surface_surface_0"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/playerToolbar"
+        android:background="@color/color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/favorite_button_selector"
+            app:tint="@color/white" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="44dp"
+        android:layout_marginTop="32dp"
+        android:id="@+id/ivArtistImage"
+        android:layout_width="match_parent"
+        android:layout_below="@id/playerToolbar"
+        android:layout_height="280dp"
+        app:cardCornerRadius="8dp">
+
+        <ProgressBar
+            android:id="@+id/imageProgressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:translationZ="4dp" />
+
+        <ImageView
+            android:id="@+id/ivPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="2dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_person" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/imageSliderViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@color/overlay_overlay"
+            android:elevation="2dp" />
+
+        <ImageButton
+            android:id="@+id/btnAddImage"
+            android:layout_width="36dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/transparent"
+            android:elevation="2dp"
+            android:src="@drawable/ic_add_photo"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btnEditImage"
+            android:layout_width="36dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/transparent"
+            android:elevation="2dp"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/white" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:elevation="2dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/listeners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivArtistImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="52dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:theme="@style/HeadlineSmallNLv2Left"
+        android:maxLines="3"
+        android:textSize="18sp"
+        tools:text="Artist Name" />
+
+    <TextView
+        android:id="@+id/clicks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listeners"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="52dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:theme="@style/HeadlineSmallNLv2Left"
+        android:maxLines="3"
+        android:textSize="18sp"
+        tools:text="Artist Name" />
+
+    <TextView
+        android:id="@+id/tvAlbumsLabel"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clicks"
+        android:theme="@style/HeadlineSmallNLv2Left"
+        android:layout_marginTop="16dp"
+        android:text="@string/albums"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAlbums"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvAlbumsLabel"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp" />
+
+</RelativeLayout>

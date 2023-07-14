@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="SpinnerDirectionsItems" >
+        <item>@string/no_order</item>
+        <item>@string/Alphabetically</item>
+        <item>@string/by_listeners</item>
+        <item>@string/by_clicks</item>
+    </string-array>
+    <string name="Alphabetically">Alphabetically</string>
+    <string name="by_listeners">By Listeners</string>>
+    <string name="by_clicks">By Clicks</string>
+    <string name="no_order">No Order</string>
+</resources>
