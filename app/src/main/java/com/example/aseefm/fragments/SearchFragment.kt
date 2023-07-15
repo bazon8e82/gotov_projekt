@@ -41,7 +41,6 @@ class SearchFragment: Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentSearchBinding.inflate(inflater, container, false)
         setupUIBasedOnLogin()
-        isLocationOn()
         return binding.root
     }
 
@@ -85,28 +84,8 @@ class SearchFragment: Fragment() {
         }
     }
 
-    private fun isLocationOn() {
-        val locationManager = requireActivity().getSystemService(Context.LOCATION_SERVICE)
-                as LocationManager
-        val isLocationEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
-
-        if (isLocationEnabled) {
-            binding.location.append(" " + getString(R.string.on))
-            binding.location.setTextColor(
-                ContextCompat.getColor(requireContext(), R.color.greenish)
-            )
-        } else {
-            binding.location.append(" " + getString(R.string.off))
-            binding.location.setTextColor(
-                ContextCompat.getColor(requireContext(), R.color.redish)
-            )
-        }
-    }
 
     private fun dashboardOnClicks() {
-        binding.ibMenu.setOnClickListener {
-            binding.drawerLayout.openDrawer(GravityCompat.START)
-        }
 
         binding.navView.bringToFront()
         binding.navView.setNavigationItemSelectedListener {

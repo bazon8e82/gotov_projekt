@@ -71,10 +71,6 @@ class ArtistActivity : AppCompatActivity() {
             binding.indicator.setViewPager(binding.imageSliderViewPager)
 
             binding.imageProgressBar.visibility = View.GONE
-
-            binding.btnEditImage.setOnClickListener {
-                openEditPhotoBottomSheet(imageList)
-            }
         }
 
         binding.btnAddImage.setOnClickListener {
